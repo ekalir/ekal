@@ -1,0 +1,111 @@
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Lato:900i');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background: #000000; 
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 10vh;
+  letter-spacing: 10px;
+  color: #ffffff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 55px blue, 0 0 75px blue;
+  text-align: center;
+  animation: text-flicker 1s linear infinite;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  
+  1% {
+    opacity: 0.9;
+  }
+  
+  5% {
+    opacity: 1;
+  }
+  
+  7% {
+    opacity: 0.5;
+  }
+  
+  15% {
+    opacity: 1;
+  }
+  
+  16% {
+    opacity: 0.3;
+  }
+  
+  20% {
+    opacity: 0.9;
+  }
+  
+  22% {
+    opacity: 0.7;
+  }
+  
+  30% {
+    opacity: 1;
+  }
+  
+  35% {
+    opacity: 1;
+  }
+  
+  50% {
+    opacity: 0.4;
+  }
+  
+  60% {
+    opacity: 1;
+  }
+  
+  64% {
+    opacity: 1;
+  }
+  
+  70% {
+    opacity: 0.2;
+  }
+  
+  85% {
+    opacity: 0.1;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+</style>
+
+<script>
+  var q = [
+      'Bilimsel araştırmaların her on feministten onunun evde kaldığını ve mutsuz bir şekilde öldüğünü gösterdiğini biliyor muydunuz?'
+    ]
+
+    function g() {
+      var r = Math.floor(Math.random() * (q.length));
+      document.getElementById('feminist-uyarici').innerHTML = q[r];
+    }
+
+    window.onload = g;
+
+</script>
+<h1 id="feminist-uyarici"><h1>
