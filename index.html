@@ -1,5 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Evde kalırsın!" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
 <title>Evde kalırsın!</title>
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<script>
+  var q = [
+    'Bilimsel araştırmaların her on feministten onunun evde kaldığını ve mutsuz bir şekilde hayata veda ettiğini gösterdiğini biliyor muydunuz? On olmasa da, dokuz tanesi kesin.',
+    'Şaka değil, evde kalırsın.',
+    'İyi biriyle evlenip, iki tane de çocuk yapsan daha iyi. Net.',
+    ]
+
+    function g() {
+      var r = Math.floor(Math.random() * (q.length));
+      document.getElementById('feminist-uyarici').innerHTML = q[r];
+    }
+
+    window.onload = g;
+
+</script>
+  
 <style>
 body {
   background-color: #141014;
@@ -34,23 +58,7 @@ a {
   font-size: 15px;
 }
 </style>
-
-<script>
-  var q = [
-    'Bilimsel araştırmaların her on feministten onunun evde kaldığını ve mutsuz bir şekilde hayata veda ettiğini gösterdiğini biliyor muydunuz? On olmasa da, dokuz tanesi kesin.',
-    'Şaka değil, evde kalırsın.',
-    'İyi biriyle evlenip, iki tane de çocuk yapsan daha iyi. Net.',
-    ]
-
-    function g() {
-      var r = Math.floor(Math.random() * (q.length));
-      document.getElementById('feminist-uyarici').innerHTML = q[r];
-    }
-
-    window.onload = g;
-
-</script>
-
+</head>
 <body>
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
