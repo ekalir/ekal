@@ -99,8 +99,17 @@ function consoleText(words, id, colors) {
     }
   }, 200)
 }
+    var q = [
+      'Bilimsel araştırmaların her on feministten onunun evde kaldığını ve mutsuz bir şekilde öldüğünü gösterdiğini biliyor muydunuz?'
+    ]
 
-  consoleText(['Bilimsel araştırmaların her on feministten onunun evde kaldığını ve mutsuz bir şekilde öldüğünü gösterdiğini biliyor muydunuz?'], 'text',['#FF0034']);
+    function g() {
+      var r = Math.floor(Math.random() * (q.length));
+      consoleText([q[r]], 'text',['#FF0034']);
+
+    }
+
+    window.onload = g;
 </script>
 
 
