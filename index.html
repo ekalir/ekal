@@ -1,13 +1,40 @@
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link href='i.css' rel='stylesheet' type='text/css'>
+<style>
+  body {
+    background-color: #141014;
+    overflow: hidden;
+    padding: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+} 
+  
+p {
+    font-family: 'Montserrat';
+    font-size: 80px;
+    font-weight: bolder;
+    margin-left: 50px;
+    background: linear-gradient(to right,             rgb(255,137,111), rgb(255,111,239), rgb(89,       79, 255));
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anim2 5s ease infinite;
+}
+
+@keyframes anim2 {
+    0% {background-position: 0% 50%; text-shadow:         rgb(255,137,111) 0 0 50px; }
+    50% {background-position: 100% 50%;                   text-shadow: rgb(89, 79, 255) 0 0 50px; }
+    100% {background-position: 0% 50%;                      text-shadow: rgb(255,137,111) 0 0 50px; } 
+}
+</style>
 
 <script>
   var q = [
-      'Bilimsel araştırmaların her on feministten onunun evde kaldığını ve mutsuz bir şekilde öldüğünü gösterdiğini biliyor muydunuz?',
+    'Bilimsel araştırmaların her on feministten onunun evde kaldığını ve mutsuz bir şekilde hayata veda ettiğini gösterdiğini biliyor muydunuz? On olmasa da, dokuz tanesi kesin.',
     'Şaka değil, evde kalırsın.',
     'İyi biriyle evlenip, iki tane de çocuk yapsan daha iyi. Net.',
-        'Vazgeç bu feminizm sevdasından. 58 kedinle ölürsün bak, demedi deme.'
-
     ]
 
     function g() {
@@ -18,8 +45,7 @@
     window.onload = g;
 
 </script>
-<div class="container">
-  <div class="background-color">
-    <p id="feminist-uyarici"></p>
-  </div>
-</div>
+
+<body>
+  <p id="feminist-uyarici"></p>
+</body>
