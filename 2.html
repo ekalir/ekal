@@ -1,3 +1,4 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <style>
   body {
         background-color: #141014;
@@ -11,20 +12,17 @@
 } 
   
 p {
-    font-family: 'Poppins';
+    font-family: 'Montserrat';
     font-size: 80px;
     font-weight: bolder;
     margin-left: 50px;
-    /* Le background change pas de couleur, il a juste un dégradé */
     background: linear-gradient(to right,             rgb(255,137,111), rgb(255,111,239), rgb(89,       79, 255));
     background-size: 200% 200%;
-    /* Ca c'est pour que le texte devienne transparent et accueille la couleur du background */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: anim2 5s ease infinite;
 }
 
-/* L'anim c'est juste un déplacement du background oversize et un text-shadow qui change de couleur */
 @keyframes anim2 {
     0% {background-position: 0% 50%; text-shadow:         rgb(255,137,111) 0 0 50px; }
     50% {background-position: 100% 50%;                   text-shadow: rgb(89, 79, 255) 0 0 50px; }
@@ -34,7 +32,8 @@ p {
 
 <script>
   var q = [
-      'Bilimsel araştırmaların her on feministten onunun evde kaldığını ve mutsuz bir şekilde öldüğünü gösterdiğini biliyor muydunuz?'
+      'Bilimsel araştırmaların her on feministten onunun evde kaldığını ve mutsuz bir şekilde öldüğünü gösterdiğini biliyor muydunuz?',
+      'Şaka değil, evde kalırsın.'
     ]
 
     function g() {
