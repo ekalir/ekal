@@ -1,7 +1,20 @@
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='i.css' rel='stylesheet' type='text/css'>
 
+<script>
+  var q = [
+      'Bilimsel araştırmaların her on feministten onunun evde kaldığını ve mutsuz bir şekilde öldüğünü gösterdiğini biliyor muydunuz?',
+      ''
+    ]
 
+    function g() {
+      var r = Math.floor(Math.random() * (q.length));
+      document.getElementById('feminist-uyarici').innerHTML = q[r];
+    }
+
+    window.onload = g;
+
+</script>
 <div class="container">
   <div class="background-color">
     <p id="feminist-uyari"></p>
